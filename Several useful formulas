@@ -1,0 +1,15 @@
+'Color a cell yellow using a hotkey
+Sub Yellow() 'Function name
+'
+' Yellow Macro
+'
+' Keyboard Shortcut: Ctrl+Shift+Z
+'
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .Color = 65535
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+End Sub
